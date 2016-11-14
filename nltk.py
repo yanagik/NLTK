@@ -58,3 +58,17 @@ def lexical_diversity(text):
 
 def percentage(count,total):
     return 100*count/total
+
+# Appending adds a single item to a list
+sent1.append("Some")
+
+# Given a word, find the index of when it first occurs
+text4.index('awaken')
+
+# Indexes start from 0
+
+# A slice m:n starts at m and ends at n-1
+
+# Omitting m means starting at the beginning; omitting n means going to the end.
+
+# Think of strings as individual words.
