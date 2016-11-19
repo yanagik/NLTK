@@ -72,3 +72,19 @@ text4.index('awaken')
 # Omitting m means starting at the beginning; omitting n means going to the end.
 
 # Think of strings as individual words.
+
+# 50 most common words in a text
+fdist1=FreqDist(text1)
+print(fdist1)
+fdist1.most_common(50)
+
+# Cumulative frequency plot
+fdist1.plot(50,cumulative=True)
+
+# List of words that occur once only, not to be confused with the set of all words
+fdist1.hapaxes()
+
+# For each word in the vocabulary, check whether the length of the word exceeds 15
+V=set(text1)
+long_words=[w for w in V if len(w)>15]
+sorted(long_words)
