@@ -88,3 +88,25 @@ fdist1.hapaxes()
 V=set(text1)
 long_words=[w for w in V if len(w)>15]
 sorted(long_words)
+
+# The words in the chat corpus that are longer than seven characters and occur more than seven times
+fdist5=FreqDist(text5)
+sorted(w for w in set(text5) if len(w)>7 and fdist5[w]>7)
+
+# Look at distribution of word lengths in a text
+[len(w) for w in text1]
+fdist=FreqDist(len(w) for w in text1)
+print(fdist)
+fdist
+
+#Create a list of the elements in the set of unique words in text7 that contain both a hyphen and the substring "index"
+sorted(w for w in set(text7) if '-' in w and 'index' in w)
+
+#Create a list of the elements in the set of unique words in text3 that are initially capitalized and are longer than 10 characters
+sorted(wd for wd in set(text3) if wd.istitle() and len(wd) > 10)
+
+#Create a list of the elements in the set of unique words in sent7 that are not all lowercase
+sorted(w for w in set(sent7) if not w.islower())
+
+#Create a list of the elements in the set of unique words in text2 that have either the substring "cie" or the substring "cei"
+sorted(t for t in set(text2) if 'cie' in t or 'cei' in t)
