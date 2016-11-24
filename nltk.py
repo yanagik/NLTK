@@ -110,3 +110,12 @@ sorted(w for w in set(sent7) if not w.islower())
 
 #Create a list of the elements in the set of unique words in text2 that have either the substring "cie" or the substring "cei"
 sorted(t for t in set(text2) if 'cie' in t or 'cei' in t)
+
+#Length of text1
+len(text1)
+
+#Unique words in text1
+len(set(text1))
+
+#Unique words in text1 after treating words which differ only in capitalization as the same
+len(set(word.lower() for word in text1))
