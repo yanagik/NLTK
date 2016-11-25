@@ -119,3 +119,10 @@ len(set(text1))
 
 #Unique words in text1 after treating words which differ only in capitalization as the same
 len(set(word.lower() for word in text1))
+
+#Unique words in text1 after lowercasing only those words that are purely alphabetic
+len(set(word.lower() for word in text1 if word.isalpha()))
+
+#Compare to
+#Unique words in text1 after including only those words that are lowercased
+len(set(word for word in text1 if word.islower()))
