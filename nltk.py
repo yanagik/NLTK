@@ -126,3 +126,6 @@ len(set(word.lower() for word in text1 if word.isalpha()))
 #Compare to
 #Unique words in text1 after including only those words that are lowercased
 len(set(word for word in text1 if word.islower()))
+
+#Perhaps it would have been simpler just to count the lowercase-only items, but this gives the wrong answer (why?)
+#Answer: If you do it this way, you are including only those words that were already lowercase-only to begin with.
