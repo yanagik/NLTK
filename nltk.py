@@ -129,3 +129,13 @@ len(set(word for word in text1 if word.islower()))
 
 #Perhaps it would have been simpler just to count the lowercase-only items, but this gives the wrong answer (why?)
 #Answer: If you do it this way, you are including only those words that were already lowercase-only to begin with.
+
+#How many words are there in text2? How many distinct words are there?
+len(text2)
+len(set(text2))
+
+#Find the collocations in text5.
+text5.collocations()
+
+#Consider the following Python expression: len(set(text4)). State the purpose of this expression. Describe the two steps involved in performing this computation.
+#The number of unique words in text4. set(text4) returns a list of all the unique words in text4, and len(set(text4)) returns the number of elements in this list.
