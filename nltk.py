@@ -139,3 +139,15 @@ text5.collocations()
 
 #Consider the following Python expression: len(set(text4)). State the purpose of this expression. Describe the two steps involved in performing this computation.
 #The number of unique words in text4. set(text4) returns a list of all the unique words in text4, and len(set(text4)) returns the number of elements in this list.
+
+#Using list addition, and the set and sorted operations, compute the vocabulary of the sentences sent1 ... sent8.
+fullsent=sent1+sent2+sent3+sent4+sent5+sent6+sent7+sent8
+len(set(fullsent))
+
+#Lower case every word in text1. Then return a set of the unique resulting lower-cased words.
+sorted(set(w.lower() for w in text1))
+
+#Lower case every word in the set of unique words in text1.
+sorted(w.lower() for w in set(text1))
+
+#The second will give a larger value. "The" and "the" are in set(text1), but only "the" is in the set of unique lower-cased words.
