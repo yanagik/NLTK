@@ -151,3 +151,13 @@ sorted(set(w.lower() for w in text1))
 sorted(w.lower() for w in set(text1))
 
 #The second will give a larger value. "The" and "the" are in set(text1), but only "the" is in the set of unique lower-cased words.
+
+#What is the difference between the following two tests: w.isupper() and not w.islower()?
+#w.isupper() tests if w contains cased characters and all are uppercase.
+#w.islower() tests if w contains cased characters and all are lowercase.
+#not w.islower() tests if w doesn't contain cased characters or isn't all lowercase.
+
+#Write the slice expression that extracts the last two words of text2.
+text2[-2:]
+
+#Find all the four-letter words in the Chat Corpus (text5). With the help of a frequency distribution (FreqDist), show these words in decreasing order of frequency.
