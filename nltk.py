@@ -161,3 +161,8 @@ sorted(w.lower() for w in set(text1))
 text2[-2:]
 
 #Find all the four-letter words in the Chat Corpus (text5). With the help of a frequency distribution (FreqDist), show these words in decreasing order of frequency.
+sorted(w for w in set(text4) if len(w)==4)
+
+FreqDist(sorted(w for w in text5 if len(w)==4))
+
+#Use a combination of for and if statements to loop over the words of the movie script for Monty Python and the Holy Grail (text6) and print all the uppercase words, one per line.
