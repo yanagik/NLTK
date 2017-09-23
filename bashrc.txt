@@ -1,0 +1,6 @@
+if [ -z $STY ];
+ then
+  PS1='\e[01;32m\h:\w \u\$ \e[00m'
+ else
+  PS1='\e[01;31m\h:\w \u\$ \e[00m'
+fi
